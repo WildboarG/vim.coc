@@ -15,7 +15,9 @@ cp vimrc ~/.vimrc
 
 mkdir -p ~/.vim/plugged
 cd ~/.vim/plugged
-curl --fail -L https://github.com/neoclide/coc.nvim/archive/release.tar.gz | tar xzfv -
+
+git clone --branch release https://github.com/neoclide/coc.nvim.git --depth=1
+
 
 #安装扩展
 mkdir -p ~ /.config/coc/extensions
